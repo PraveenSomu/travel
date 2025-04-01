@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "../App.css";
+import Allroutes from "../pages/Allroutes";
 
 const Header = () => {
   return (
@@ -52,6 +53,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
+      <Allroutes/>
     </>
   );
 };
