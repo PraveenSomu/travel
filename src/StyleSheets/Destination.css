@@ -1,0 +1,357 @@
+
+/* ~~~~~~~~~~~~ GLOBAL SETTINGS ~~~~~~~~~~~~ */
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+/* ---------------------------colors----------------------- */
+:root {
+    --d-red: #6d073a;
+    --l-red: #9f798a;
+    --clr-primary: #f53b57;
+    --clr-secondrary: #e9b949;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #116530;
+    --green1: #A3EBB1;
+    --teal: #20c997;
+    --white: #fff;
+    --gray: #6c757d;
+    --dark: #343a40;
+    --transition: all .2s linear;
+    --inv:#fff;
+    --def:#96b7c4;
+}
+
+
+.des-bkg {
+    object-fit: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/des.jpg) center/cover no-repeat fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.head3 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: .4s;
+    animation-timing-function: linear;  
+    padding: 15px 0;
+
+
+}
+
+.head3 h1 {
+    color: white;
+    font-size: 4rem;
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+
+.head4 {
+    padding: 10px;
+}
+
+.head4 h2 {
+    text-align: start;
+    padding: 40px 20px 10px 40px;
+    font-family: "Engagement", serif;
+    font-weight: 550;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    color: #6d073a;
+}
+
+.tips {
+    padding-left: 40px;
+    text-align: center;
+}
+
+.tips img {
+    width: 130px;
+    height: 140px;
+    margin-bottom: 30px;
+}
+
+.tips h2 {
+    font-family: "Kaushan Script", serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #dc3545;
+
+}
+
+.tips p {
+    max-width: 320px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tour-box img {
+    width: 100%;
+    height: 100%
+}
+
+.tour-box {
+    padding: 10px 40px;
+}
+
+.goa-box {
+    padding: 20px;
+}
+
+.goa-box i {
+    font-size: 2.3rem;
+    padding: 10px;
+}
+
+.chat-box {
+    text-align: start;
+    padding: 0 10px;
+}
+
+.chat-box h5 {
+    font-size: 1.5rem;
+    color: #c12809;
+    font-family: "Kaushan Script", cursive;
+
+}
+
+.golden-box h3 {
+    font-size: 2.3rem;
+    padding-right: 20px;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    color: #dc9f0f;
+
+}
+
+.goa {
+    margin: 30px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.shadow button {
+    margin: 7px 10px 4px 10px;
+    outline: none;
+    border: none;
+}
+
+.shadow h3 {
+    color: #0d6efb;
+    font-family: "Niconne", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1px;
+}
+
+.shadow:hover button {
+    background-color: #6d073a;
+}
+
+.shadow:hover h3 {
+    color: #6d073a;
+}
+
+.img-box-3 {
+    overflow: hidden;
+}
+
+.img-box-3 img {
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    transition-duration: .5s;
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out;
+}
+
+.goa:hover .img-box-3 img {
+    transform: scale(1.2);
+    padding: 20px;
+}
+
+.desc-box {
+    object-fit: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/bkg6.jpg) center/cover no-repeat fixed;
+    padding: 30px;
+
+}
+
+.head4 button {
+    margin-left: 50px;
+}
+
+.head4 h4 {
+    margin: 20px 20px 20px 50px;
+    text-transform: uppercase;
+    color: #d7b301;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.head4:hover button {
+    background-color: #6d073a;
+}
+
+.menubox-img img{
+    width: 400px;
+    height: 400px;
+}
+.menubtn li{
+    list-style-type: none;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.menubtn{
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+/* ~~~~~~~ INIT. BTN ~~~~~~~ */
+
+.btn0 {		
+	position: relative;	
+	padding:5px;
+	padding-right: 3.1rem;
+	font-size: 1.4rem;
+	color: var(--inv);
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+    color: #0d6efb;
+    border-radius: 5px;
+}
+
+.btn0:before, .btn0:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.btn0:hover {
+	color: var(--def);
+	transition-delay: .2s;
+}
+
+.btn0:hover:before {
+	transition-delay: 0s;
+}
+
+.btn0:hover:after {
+	background:#6d073a;
+	transition-delay: .10s;
+}
+
+/* From Top */
+
+.from-top:before, 
+.from-top:after {
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.from-top:before {
+	bottom: 0;	
+	border: 2px solid #6d073a;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-top:after {
+	top: 0;
+	height: 0;
+}
+
+.from-top:hover:before,
+.from-top:hover:after {
+	height: 100%;
+    border-radius: 5px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:480px) and (max-width:768px) {
+    .head3 h1 {
+        font-size: 2.5rem;
+        transform: translate(50%, -50%);
+    }
+   
+    
+
+
+
+
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+
+    .head3 h1 {
+        font-size: 3.2rem;
+        transform: translate(50%, -50%);
+    }
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {}

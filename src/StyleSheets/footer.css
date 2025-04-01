@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+/* ---------------------------colors----------------------- */
+:root {
+    --d-red:#6d073a;
+    --l-red:#9f798a;
+    --clr-primary: #f53b57;
+    --clr-secondrary: #e9b949;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #116530;
+    --green1: #A3EBB1;
+    --teal: #20c997;
+    --white: #fff;
+    --gray: #6c757d;
+    --dark: #343a40;
+    --transition: all .2s linear;
+}
+
+
+.footer{
+    margin-top: 50px;
+    background-color:#6d073a;
+}
+.foot-brand {
+    font-size: 1.5rem;
+    font-family: "Great Vibes", serif;
+    font-weight: 900;
+    padding: 7px;
+    word-spacing: 5px;
+    text-decoration: none;
+    color:white;
+}
+
+.logo1 {
+    margin-right: 15px;
+}
+#span1 {
+    margin: 10px;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+}
+.head-box{
+    padding: 30px;
+}
+.head-box h6{
+    margin-top: 10px;
+    padding-left: 20px;
+    color: white;
+    text-transform: capitalize;
+}
+.links{
+    padding: 30px 10px;
+}
+.links a{
+    font-size: 1.5rem;
+    margin: 30px 10px;
+    color: white;
+}
+.links a:hover{
+    color: #9f798a;
+   
+}
+
+.head-6 h6{
+    padding: 5px 20px;
+}
+.insta-img img{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+/* copyright & ibtn start----------------------------------------- */
+
+.ibtn1 {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: #9f798a;
+    color:#6d073a;
+    border: 1px solid black;
+    bottom: 70px;
+    right: 40px;
+    padding-top: 3px;
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 5px;
+    transition: all 1s .1s ease;
+   
+}
+
+.ibtn1:hover {
+    color: #9f798a;
+    background-color:#6d073a;
+}
+
+
+.myname {
+    text-align: center;
+    opacity: 75%;
+    color: #9f798a;
+    padding-bottom: 30px;
+}

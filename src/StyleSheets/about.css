@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+/* ---------------------------colors----------------------- */
+:root {
+    --d-red: #6d073a;
+    --l-red: #9f798a;
+    --clr-primary: #f53b57;
+    --clr-secondrary: #e9b949;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #116530;
+    --green1: #A3EBB1;
+    --teal: #20c997;
+    --white: #fff;
+    --gray: #6c757d;
+    --dark: #343a40;
+    --transition: all .2s linear;
+}
+
+.about-bg {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/about2.jpg) center/cover no-repeat fixed;
+
+}
+
+.head1 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: .4s;
+    animation-timing-function: linear;
+    padding: 15px;
+
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(7%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(1%);
+    }
+
+}
+
+.head1 h1 {
+    color: white;
+    font-size: 4rem;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    word-spacing: 10px;
+}
+
+.head1 h6 {
+    color: white;
+    word-spacing: 10px;
+
+}
+
+.head-about {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.head-about p {
+    max-width: 1000px;
+    margin: 5px auto;
+    word-spacing: 5px;
+    padding: 10px;
+    font-family: "Engagement", serif;
+    font-weight: 400;
+    word-spacing: 4px;
+    font-size: 2.6rem;
+}
+
+.head-about p span {
+    color: #0463f1;
+}
+
+/* company ---------------- */
+
+.company {
+    object-fit: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/company1.jpg) center/cover no-repeat fixed;
+    padding: 120px 0;
+}
+
+.company-box {
+    width: 400px;
+    height: 70%;
+    background-color: #6d073a;
+    transform: translateY(50px);
+    margin-left: 30px;
+    background: linear-gradient(69deg, #bb4e01, #63d230, #f04377, #27767d, #130351);
+    background-size: 300% 300%;
+    animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.company-box1 {
+    width: 400px;
+    height: 70%;
+    transform: translate(18%, -70%);
+
+}
+
+.company-box1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.company-profile {
+    color: white;
+    margin-top: 30px;
+    padding: 30px 40px;
+
+
+}
+
+
+.company-profile h1 {
+    font-size: 3rem;
+    font-family: "Engagement", serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+
+}
+
+.company-profile p {
+    padding: 20px 30px;
+    max-width: 500px;
+}
+
+.head2 {
+    text-align: start;
+    padding: 50px;
+
+
+}
+
+.head2 h1 {
+    font-family: "Abril Fatface", serif;
+    font-weight: 700;
+    font-size: 4rem;
+    word-spacing: 5px;
+
+}
+.head2 p{
+    margin-top: 20px;
+}
+
+.award-box {
+    padding: 5px 60px 35px 80px;
+
+}
+
+.award-sml-box {
+    border-left: 1px solid grey;
+    padding-left: 20px;
+}
+
+.award-box img {
+    width: 80px;
+    height: 80px;
+}
+
+.award-sml-box h2 {
+    color: #6d073a;
+    font-family: "Poiret One", serif;
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:480px) and (max-width:768px) {
+    .head2 h1 {
+        font-size: 2rem;
+    }
+
+    .company-box {
+        visibility: hidden;
+
+    }
+
+    .company-box1 {
+        width: 400px;
+        height: 90%;
+        transform: translate(14%, -95%);
+
+    }
+    
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .company-box {
+        visibility: hidden;
+    }
+
+    .company-box1 {
+        width: 600px;
+        height: 90%;
+        transform: translate(28%, -95%);
+
+    }
+
+    .company-profile {
+        padding: 30px 28%;
+    }
+
+    .head2 h1 {
+        font-size: 3rem;
+    }
+    .award-box {
+        padding: 5px 10px 35px 10%;
+    
+    }
+
+};

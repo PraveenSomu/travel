@@ -1,0 +1,121 @@
+
+/* ~~~~~~~~~~~~ GLOBAL SETTINGS ~~~~~~~~~~~~ */
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+/* ---------------------------colors----------------------- */
+:root {
+    --d-red: #6d073a;
+    --l-red: #9f798a;
+    --clr-primary: #f53b57;
+    --clr-secondrary: #e9b949;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #116530;
+    --green1: #A3EBB1;
+    --teal: #20c997;
+    --white: #fff;
+    --gray: #6c757d;
+    --dark: #343a40;
+    --transition: all .2s linear;
+    --inv:#fff;
+    --def:#96b7c4;
+}
+
+
+.blog-bkg {
+    object-fit: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/italy1.jpg) center/cover no-repeat fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container img{
+    width: 100%;
+    height: 400px;
+}
+.blog-box{
+    padding: 50px;
+}
+.blog-box h2{
+    padding: 20px;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 900;
+} 
+.blog-box h2:hover{
+    color: rgb(225, 3, 225);
+    text-shadow: #343a40;
+}
+
+.blog-box1{
+    padding: 30px;
+}
+.blog-box1 h2{
+    padding: 20px;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 900;
+   
+}
+.blog-box1 li{
+    list-style-type: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid grey;
+    margin: 10px;
+    border-radius: 15px;
+    color: #6c757d;
+    transition: var(--transition);
+}
+
+.blog-box1 li:hover{
+    color: #6d073a;
+    border: 2px solid #6d073a;
+    letter-spacing: 1px;
+}
+
+.recent-box img{
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+.recent-box h4 ,p{
+    padding: 10px;
+}
+
+.blog-box2 h2{
+    padding: 20px;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 900;
+   
+}
+.blog-box2 li{
+    list-style-type: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid grey;
+    margin: 10px;
+    border-radius: 15px;
+    color: #6c757d;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.blog-box2 li:hover{
+    color: #6d073a;
+    border: 2px solid #6d073a;
+    
+}
+
+
